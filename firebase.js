@@ -33,7 +33,9 @@ document.querySelectorAll('.toggle-password').forEach(button => {
     const input = document.getElementById(targetId);
     const isPassword = input.type === 'password';
     input.type = isPassword ? 'text' : 'password';
-    button.textContent = isPassword ? '🙈' : '👁️';
+button.innerHTML = isPassword
+  ? '<img src="hide.png" class="eye-icon" />'
+  : '<img src="visible.png" class="eye-icon" />';
   });
 });
 

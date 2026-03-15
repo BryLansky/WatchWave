@@ -86,7 +86,7 @@ h1 {
 }
 
 /* Password container */
-.password-container {
+.password-container {   
   position: relative;
   display: flex;
   align-items: center;
@@ -204,4 +204,25 @@ h1 {
 #login-brand h1 {
   font-size: 26px;
   color: #07326A;
+}
+.eye-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.toggle-password:hover .eye-icon {
+  opacity: 1;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
