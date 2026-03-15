@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WatchWave — Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+
+    <div id="login-box">
+      <div id="login-brand">
+        <img src="logo.png" alt="WatchWave" id="login-logo" />
+        <h1>WatchWave</h1>
+      </div>
+      <p class="subtitle">Sign in to continue</p>
+
+      <!-- Tabs -->
+      <div id="auth-tabs">
+        <button class="auth-tab active" data-tab="login">Login</button>
+        <button class="auth-tab" data-tab="register">Register</button>
+      </div>
+
+      <!-- Login Form -->
+      <div id="login-form" class="auth-form">
+        <input type="email" id="login-email" placeholder="Email" />
+        <input type="password" id="login-password" placeholder="Password" />
+        <button id="login-btn">Login</button>
+        <div class="divider"><span>or</span></div>
+        <button id="google-login-btn">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="18" />
+          Continue with Google
+        </button>
+      </div>
+
+      <!-- Register Form -->
+      <div id="register-form" class="auth-form hidden">
+        <input type="text" id="register-name" placeholder="Full Name" />
+        <input type="email" id="register-email" placeholder="Email" />
+        <input type="password" id="register-password" placeholder="Password" />
+        <button id="register-btn">Create Account</button>
+        <div class="divider"><span>or</span></div>
+        <button id="google-register-btn">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="18" />
+          Continue with Google
+        </button>
+      </div>
+
+      <p id="auth-error" class="error hidden"></p>
+    </div>
+
+    <!-- Firebase -->
+    <script type="module" src="firebase.js"></script>
+  </body>
+</html>

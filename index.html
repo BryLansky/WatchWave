@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrameVault</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+  <div id="brand">
+    <img src="logo.png" alt="WatchWave" id="logo" />
+    <h1>WatchWave</h1>
+  </div>
+  <div id="nav-right">
+    <button class="tab-btn active" data-tab="anime">Anime</button>
+    <button class="tab-btn" data-tab="movies">Movies</button>
+    <select id="genre-select">
+      <option value="">All Genres</option>
+      <option value="28|1">Action</option>
+      <option value="10749|22">Romance</option>
+      <option value="35|4">Comedy</option>
+      <option value="18|8">Drama</option>
+      <option value="14|10">Fantasy</option>
+      <option value="27|14">Horror</option>
+      <option value="9648|7">Mystery</option>
+      <option value="878|24">Sci-Fi</option>
+    </select>
+    <select id="year-select">
+      <option value="">All Years</option>
+    </select>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+    <div id="user-info">
+      <span id="user-name">👤 Guest</span>
+      <button id="logout-btn">Logout</button>
+    </div>
+  </div>
+</nav>
+    <!-- Hero / Search -->
+    <section id="hero">
+      <h2 id="hero-title">Discover Anime</h2>
+      <p id="hero-sub">Search thousands of anime titles instantly</p>
+      <div id="search-box">
+        <input type="text" id="search-input" placeholder="Search anime..." />
+        <button id="search-btn">Search</button>
+      </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section id="trending-section">
+      <h3 id="trending-title">🔥 Top Anime Right Now</h3>
+      <div id="trending-grid" class="grid"></div>
+      <div id="load-more-container">
+        <button id="load-more-btn" class="hidden">Load More</button>
+      </div>
+    </section>
+
+    <!-- Search Results -->
+    <section id="results-section" class="hidden">
+      <h3 id="results-title">Search Results</h3>
+      <div id="results-grid" class="grid"></div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal-overlay" class="hidden">
+      <div id="modal">
+        <button id="modal-close">✕</button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="auth.js"></script>
+  </body>
+</html>
