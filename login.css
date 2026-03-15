@@ -85,6 +85,33 @@ h1 {
   border-color: #0A61C9;
 }
 
+/* Password container */
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  flex: 1;
+  padding-right: 40px; /* Space for the toggle button */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #749DC8;
+  transition: color 0.3s;
+}
+
+.toggle-password:hover {
+  color: #07326A;
+}
+
 .auth-form button:first-of-type {
   background-color: #064089;
   color: white;

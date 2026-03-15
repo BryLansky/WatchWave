@@ -26,6 +26,17 @@ document.querySelectorAll('.auth-tab').forEach(tab => {
   });
 });
 
+// Password toggle functionality
+document.querySelectorAll('.toggle-password').forEach(button => {
+  button.addEventListener('click', () => {
+    const targetId = button.dataset.target;
+    const input = document.getElementById(targetId);
+    const isPassword = input.type === 'password';
+    input.type = isPassword ? 'text' : 'password';
+    button.textContent = isPassword ? '🙈' : '👁️';
+  });
+});
+
 function showError(msg) {
   const el = document.getElementById('auth-error');
   el.textContent = msg;

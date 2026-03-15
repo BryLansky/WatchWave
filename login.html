@@ -24,7 +24,10 @@
       <!-- Login Form -->
       <div id="login-form" class="auth-form">
         <input type="email" id="login-email" placeholder="Email" />
-        <input type="password" id="login-password" placeholder="Password" />
+        <div class="password-container">
+          <input type="password" id="login-password" placeholder="Password" />
+          <button type="button" class="toggle-password" data-target="login-password">👁️</button>
+        </div>
         <button id="login-btn">Login</button>
         <div class="divider"><span>or</span></div>
         <button id="google-login-btn">
@@ -37,7 +40,10 @@
       <div id="register-form" class="auth-form hidden">
         <input type="text" id="register-name" placeholder="Full Name" />
         <input type="email" id="register-email" placeholder="Email" />
-        <input type="password" id="register-password" placeholder="Password" />
+        <div class="password-container">
+          <input type="password" id="register-password" placeholder="Password" />
+          <button type="button" class="toggle-password" data-target="register-password">👁️</button>
+        </div>
         <button id="register-btn">Create Account</button>
         <div class="divider"><span>or</span></div>
         <button id="google-register-btn">
